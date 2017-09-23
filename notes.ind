@@ -1,0 +1,173 @@
+\begin{theindex}
+
+  \item абелева група, \hyperpage{48}
+  \item абсциса збіжності, \hyperpage{84}
+  \item аргумент оператора, \hyperpage{35}
+  \item базис, \hyperpage{113}
+  \item визначник Фредгольма, \hyperpage{17}, 
+		\hyperpage{20}
+  \item вільний член, \hyperpage{5}
+  \item добуток оператора на число, 
+		\hyperpage{57}
+  \item елемент
+    \subitem власний, \hyperpage{66}
+  \item задача Абеля, \hyperpage{8}
+  \item збіжність
+    \subitem за нормою, \hyperpage{49}
+    \subitem слабка, \hyperpage{118}
+  \item згортка, \hyperpage{88}
+  \item значення
+    \subitem власне, \hyperpage{66}
+    \subitem регулярне, \hyperpage{17}, \hyperpage{66}
+    \subitem характеристичне, \hyperpage{17}
+  \item інтеграл
+    \subitem Лапласа, \hyperpage{83}
+  \item інтеграл дробового порядку, 
+		\hyperpage{169}
+  \item інтеграли типу згортки, \hyperpage{6}
+  \item інтегральне рівняння
+    \subitem Абеля, \hyperpage{9}
+      \subsubitem узагальнене, \hyperpage{166}
+    \subitem Вольтерри, \hyperpage{5}
+    \subitem Гамерштайна, \hyperpage{7}
+    \subitem Урисона, \hyperpage{7}
+    \subitem Фредгольма, \hyperpage{5}
+    \subitem другого роду, \hyperpage{5}
+    \subitem парне, \hyperpage{6}
+    \subitem першого роду, \hyperpage{5}
+    \subitem сингулярне, \hyperpage{6}
+    \subitem ядро, \hyperpage{5}
+  \item квадрат оператора, \hyperpage{43}
+  \item квадратура, \hyperpage{179}
+  \item квадратури
+    \subitem Гауса, \hyperpage{188}
+  \item компакт, \hyperpage{106}
+  \item кратність характеристичного числа, 
+		\hyperpage{21}
+  \item кільце, \hyperpage{58}
+    \subitem комутативне, \hyperpage{59}
+  \item метрика, \hyperpage{49}
+  \item множина
+    \subitem компактна, \hyperpage{106}
+    \subitem резольвентна, \hyperpage{66}
+    \subitem рівномірно обмежена, \hyperpage{108}
+    \subitem рівностепенево неперервна, 
+		\hyperpage{108}
+  \item мінор визначника Фредгольма, 
+		\hyperpage{17}
+  \item мінор матриці, \hyperpage{22}
+  \item нев'язка, \hyperpage{198}
+  \item нерухома точка оператора, \hyperpage{36}
+  \item норма оператора, \hyperpage{55}
+  \item нуль групи, \hyperpage{48}
+  \item область визначення оператора, 
+		\hyperpage{35}
+  \item образ точки, \hyperpage{35}
+  \item оператор, \hyperpage{35}
+    \subitem компактний, \hyperpage{111}
+    \subitem лівий обернений, \hyperpage{60}
+    \subitem лінійний, \hyperpage{51}
+    \subitem неперервний, \hyperpage{43}, \hyperpage{52}
+    \subitem нульовий, \hyperpage{51}
+    \subitem обернений, \hyperpage{60}
+    \subitem одиничний, \hyperpage{51}
+    \subitem подібності, \hyperpage{51}
+    \subitem правий обернений, \hyperpage{60}
+    \subitem резольвентний, \hyperpage{66}
+    \subitem самоспряжений, \hyperpage{117}
+    \subitem симетричний, \hyperpage{117}
+    \subitem спряжений, \hyperpage{115}
+    \subitem стиску, \hyperpage{36}
+    \subitem тотожний, \hyperpage{51}
+  \item ортогональне доповнення, \hyperpage{120}
+  \item ортогональність, \hyperpage{115}
+  \item параметр
+    \subitem регуляризації, \hyperpage{153}
+  \item перетворення
+    \subitem Лапласа, \hyperpage{83}
+    \subitem Фур'є, \hyperpage{81}
+  \item породжений підпростір, \hyperpage{120}
+  \item порядок точності квадратурної формули, 
+		\hyperpage{181}
+  \item послідовність
+    \subitem збіжна у собі, \hyperpage{34}
+    \subitem фундаментальна, \hyperpage{34}
+  \item похідна дробового порядку, 
+		\hyperpage{170}
+  \item проекція функції, \hyperpage{124}
+  \item простір
+    \subitem Банаха, \hyperpage{49}
+    \subitem банахів, \hyperpage{49}
+      \subsubitem із базисом, \hyperpage{113}
+    \subitem векторний, \hyperpage{48}
+    \subitem гільбертів, \hyperpage{114}
+    \subitem компактний, \hyperpage{106}
+    \subitem лінійний, \hyperpage{48}
+    \subitem лінійний нормований, \hyperpage{49}
+    \subitem неперервних функцій, \hyperpage{32}
+    \subitem повний, \hyperpage{35}
+  \item протилежний елемент, \hyperpage{48}
+
+  \indexspace
+
+  \item ранг характеристичного числа, 
+		\hyperpage{21}
+  \item регуляризація, \hyperpage{147}
+  \item резольвента, \hyperpage{75}
+  \item резольвента Фредгольма, \hyperpage{17}
+  \item резольвента ядра, \hyperpage{64}
+  \item розв'язок
+    \subitem регуляризований, \hyperpage{153}
+  \item ряд Ноймана, \hyperpage{62}
+  \item рівномірна збіжність послідовності операторів, 
+		\hyperpage{58}
+  \item рівняння
+    \subitem симетричне, \hyperpage{118}
+    \subitem союзне, \hyperpage{22}
+    \subitem спряжене, \hyperpage{22}
+  \item рівні оператори, \hyperpage{57}
+  \item спектр оператора, \hyperpage{67}
+  \item спряжена матриця, \hyperpage{22}
+  \item спряжена система, \hyperpage{22}
+  \item спряжене ядро, \hyperpage{22}
+  \item степінь оператора, \hyperpage{43}
+  \item сума операторів, \hyperpage{57}
+  \item твірна системи функцій, \hyperpage{146}
+  \item теорема Фредгольма
+    \subitem друга, \hyperpage{23}, \hyperpage{101}
+    \subitem перша, \hyperpage{20}, \hyperpage{100}
+    \subitem третя, \hyperpage{24}, \hyperpage{101}
+  \item тривіальний розв'язок, \hyperpage{66}
+  \item формула
+    \subitem Боде, \hyperpage{187}
+    \subitem Гауса -- Кронрода, \hyperpage{193}
+    \subitem Рунґе
+      \subsubitem друга, \hyperpage{191}
+      \subsubitem перша, \hyperpage{191}
+    \subitem Сімпсона, \hyperpage{183}
+    \subitem Шмідта, \hyperpage{124}, \hyperpage{128}
+    \subitem квадратурна, \hyperpage{179}
+    \subitem парабол, \hyperpage{183}
+    \subitem трьох восьмих, \hyperpage{186}
+  \item формули
+    \subitem Ньютона -- Котса, \hyperpage{180}
+  \item функціонал
+    \subitem стабілізувальний, \hyperpage{153}
+  \item функція
+    \subitem Гевісайда, \hyperpage{83}
+    \subitem впливу, \hyperpage{139}
+    \subitem Ґріна, \hyperpage{136}
+  \item функції
+    \subitem власні, \hyperpage{18}
+    \subitem фундаментальні, \hyperpage{18}
+  \item ядра
+    \subitem напівортогональні, \hyperpage{65}
+    \subitem ортогональні, \hyperpage{65}
+  \item ядро
+    \subitem $L_2$-ядро, \hyperpage{77}
+    \subitem Абеля, \hyperpage{166}
+    \subitem замкнене, \hyperpage{142}
+    \subitem розв'язне, \hyperpage{75}
+    \subitem симетричне, \hyperpage{118}
+
+\end{theindex}
