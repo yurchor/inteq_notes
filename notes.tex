@@ -1722,7 +1722,7 @@ C_2 = -\frac{3\,\sqrt{15}\,\sqrt{15\,{\pi }^{2}-60\,\pi +316}+45\,\pi -282}{4\,\
 
 З'ясуємо тепер, за яких умов оператор $A$ буде оператором стиску. Маємо
 \begin{multline}\label{opest}
- \rho(A\varphi_, A\varphi_2) = \max\limits_{a \leqslant t \leqslant b} |A\varphi_1(t) - A\varphi_2(t)|=\\
+ \rho(A\varphi_1, A\varphi_2) = \max\limits_{a \leqslant t \leqslant b} |A\varphi_1(t) - A\varphi_2(t)|=\\
  = \max\limits_{a \leqslant t \leqslant b} \left|\lambda \int_{a}^{b} K(t, s) \varphi_1(s) \mathrm{d}s - \lambda \int_{a}^{b} K(t, s) \varphi_2(s) \mathrm{d}s\right|=\\
  = \max\limits_{a \leqslant t \leqslant b} \left|\lambda \int_{a}^{b} K(t, s) [\varphi_1(s) - \varphi_2(s)] \mathrm{d}s\right| \leqslant\\
  \leqslant |\lambda| M (b-a) \max\limits_{a \leqslant s \leqslant b} |\varphi_1(s) - \varphi_2(s)|.
@@ -1901,13 +1901,28 @@ A\varphi_2 - A\varphi_1 = \lambda \int_{a}^{b} K(t, s) [\varphi_2(s) - \varphi_1
 
 Оператор $A$ називається просто неперервним, якщо він є неперервним у кожній точці тієї множини, на якій його задано.
 
-Нехай оператор А діє з $X$ в $X$. Виберемо будь-який елемент $x \in X$. Тоді $Ax$ буде знову належати простору $X$ і до нього знову можна застосувати оператор $A$: $A(Ax)$. Оператор, що відповідає послідовному застосуванню оператора $A$, будемо позначати символом $A^2$ і називатимемо квадратом оператора $A$\index{квадрат оператора}.
+Нехай оператор $A$ діє з $X$ в $X$. Виберемо будь-який елемент $x \in X$. Тоді $Ax$ буде знову належати простору $X$ і до нього знову можна застосувати оператор $A$: $A(Ax)$. Оператор, що відповідає послідовному застосуванню оператора $A$, будемо позначати символом $A^2$ і називатимемо квадратом оператора $A$\index{квадрат оператора}.
 
 Аналогічно можна визначити оператори $A^3$, $A^4$ і взагалі будь-який цілий додатний степінь оператора $A^n$\index{степінь оператора}.
 
 \begin{thm}\label{Anthm}
 Нехай $A$ -- таке неперервне відображення повного метричного простору $X$ у себе, що відображення $A^n$ при деякому $n$ є стислим. Тоді рівняння $Ax = x$ має, і при тому єдиний, розв'язок.
 \end{thm}
+
+\begin{proof}
+ Оскільки оператор $B=A^n$ є оператором стиску, за теоремою \ref{TBanach} у рівняння $Bx = x$ має бути єдиний розв'язок. Позначимо його $x_0$ ($Bx_0=x_0$). Тоді для будь-якого натурального $k$
+ \begin{equation}\label{BkAx_0}
+  A x_0 = A B^k x_0 = B^k Ax_0.
+ \end{equation}
+Позначимо $A x_0$ через $x$. За доведенням теореми \ref{TBanach} з того, що $b=A^n$ -- оператор стиску, для будь-якого $x \in X$ слідує, що
+\[
+ \lim_{k\to\infty} B^k x = x_0.
+\]
+Отже, з \eqref{BkAx_0} і неперервності оператора $A$ слідує, що $\lim_{k\to\infty}A x_0 = \lim_{k\to\infty} B^k x = x_0$.
+
+Єдиність розв'язку рівняння $Ax = x$ випливає із єдиності розв'язку рівняння $Bx = x$.
+\end{proof}
+
 
 Звернімося до інтегрального рівняння \eqref{volterra}. Припускатимемо, що $f(t) \in \cab$ і що ядро $K(t, s)$ неперервне у замкненому трикутнику $\Delta$: $\left\{\begin{array}{l}a\leqslant t \leqslant b,\\ a\leqslant s \leqslant t.\end{array}\right.$
 
@@ -1923,7 +1938,7 @@ A\varphi_2 - A\varphi_1 = \lambda \int_{a}^{b} K(t, s) [\varphi_2(s) - \varphi_1
 
 Нехай $\varphi_1(t)$, $\varphi_2(t)$ -- будь-які дві функції з $\cab$, Тоді
 \begin{multline}\label{estvolt}
-A\varphi_2(t) - A\varphi_1(t) = \left|\lambda \int_{a}^{t} K(t, s) [\varphi_2(s) - \varphi_1(s)] \mathrm{d}s\right|\leqslant\\
+|A\varphi_2(t) - A\varphi_1(t)| = \left|\lambda \int_{a}^{t} K(t, s) [\varphi_2(s) - \varphi_1(s)] \mathrm{d}s\right|\leqslant\\
 \leqslant |\lambda| M (t-a) \max\limits_{a\leqslant s \leqslant b} |\varphi_2(s) - \varphi_1(s)|.
 \end{multline}
 Тут
@@ -2486,7 +2501,7 @@ A(\alpha_1x_1 + \ldots + \alpha_kx_k) = \alpha_1 Ax_1 + \ldots + \alpha_k Ax_k
 \begin{equation}
  M_0 = \sup_{\|x\|\leqslant 1}\|Ax\|,
 \end{equation}
- називається нормою оператора $A$ і позначається символом $\|A\|$.\index{норма оператора}.
+ називається нормою оператора $A$ і позначається символом $\|A\|$\index{норма оператора}.
 \end{dfn}
 
 Таким чином, для будь-якого $x \in E$
@@ -2501,7 +2516,7 @@ A(\alpha_1x_1 + \ldots + \alpha_kx_k) = \alpha_1 Ax_1 + \ldots + \alpha_k Ax_k
 \end{thm}
 \begin{proof}
 	\emph{Необхідність.}
-Припустімо, що неперервний оператор не є обмеженим. Це значить, скажімо, що існує послідовність $\{x_n\}$ така, що $\|x_n\|=1$, а $\|Ax_n\|>n$. Тоді $\|A\frac{x_n}{n}\|=\frac{1}{n} \|Ax_n\| >1$. Отже, $\|A\frac{x_n}{n} - A0\| >1$, але має бути $\|\frac{x_n}{n} - 0\| = \frac{1}{n}\|X_n\| \to 0$ при. $n\to \infty$, що суперечить неперервності оператора $A$.
+Припустімо, що неперервний оператор не є обмеженим. Це значить, скажімо, що існує послідовність $\{x_n\}$ така, що $\|x_n\|=1$, а $\|Ax_n\|>n$. Тоді $\|A\frac{x_n}{n}\|=\frac{1}{n} \|Ax_n\| >1$. Отже, $\|A\frac{x_n}{n} - A0\| >1$, але має бути $\|\frac{x_n}{n} - 0\| = \frac{1}{n}\|x_n\| \to 0$ при $n\to \infty$, що суперечить неперервності оператора $A$.
 
 \emph{Достатність.} Візьмемо довільні $x$ та $y$ такі, що $\|x-y\| < \delta (\varepsilon) = \frac{\varepsilon}{\|A\|}$. Тоді за нерівністю \eqref{schwarznorm} $\|Ax -Ay\| = \|A(x-y)\| \leqslant \|A\|\cdot\|x-y\|<\varepsilon$.
 \end{proof}
@@ -3042,7 +3057,7 @@ A(x_0 + e) - \lambda (x_0 + e) = Ax_0 - \lambda x_0 + Ae - \lambda e = f,
 \textbf{Приклади}
 
 \begin{enumerate}
-	\item Нехай А -- лінійний оператор, що діє у $\mathbb{R}^n$, і нехай $\mathfrak{U} = (a_ij)_{i,j = \overline{1, n}}$ -- матриця цього оператора.
+	\item Нехай $A$ -- лінійний оператор, що діє у $\mathbb{R}^n$, і нехай $\mathfrak{U} = (a_ij)_{i,j = \overline{1, n}}$ -- матриця цього оператора.
 	
 	Рівняння
 	\begin{equation}\label{slae}
