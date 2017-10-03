@@ -2560,7 +2560,7 @@ Ax=tx(t),
 \]
 і тому
 \begin{equation}\label{exnorm2}
-\|A\| = \sup_{\|x\| \leqslant 1} \geqslant \|Ax_0\|=b.
+\|A\| = \sup_{\|x\| \leqslant 1} \|Ax\| \geqslant \|Ax_0\|=b.
 \end{equation}
 
 З \eqref{exnorm1} і \eqref{exnorm2} випливає, що $\|A\| = b$.
@@ -2750,7 +2750,7 @@ Ax = f,
 \begin{equation}
 x=A^{-1}f
 \end{equation}
-є розв'язок рівняння \eqref{opeq1}. Неважко показати, що цей розв'язкою є єдиним.
+є розв'язок рівняння \eqref{opeq1}. Неважко показати, що цей розв'язок є єдиним.
 
 Розгляньмо два лінійні обмежені оператори $A$ і $B$, що відображають лінійний нормований простір $E$ у себе. Тоді має сенс добуток $AB$ операторів. Покажемо, що
 \begin{equation}
@@ -8146,7 +8146,7 @@ I=\underbrace{I_h + \dfrac{I_{h/2}-I_h}{1-2^{-p}}}_{I_{h,h/2}} + c_1 h^{p+1} + O
 
 Оскільки можна очікувати, що наближення $I_{h/2}$ є точнішим за $I_h$, варто як нове наближення брати
 \begin{equation}\label{quadr14}
-I=\underbrace{{h/2} + \dfrac{I_{h/2}-I_h}{2^{p}-1}}_{I_{h,h/2}} + c_2 h^{p+1} + O\left(h^{p+2}\right).
+I=\underbrace{I_{h/2} + \dfrac{I_{h/2}-I_h}{2^{p}-1}}_{I_{h,h/2}} + c_2 h^{p+1} + O\left(h^{p+2}\right).
 \end{equation}
 яке виходить, якщо до \eqref{quadr12} підставити оцінку
 \[
