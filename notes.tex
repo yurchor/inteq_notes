@@ -3159,7 +3159,7 @@ A(x_0 + e) - \lambda (x_0 + e) = Ax_0 - \lambda x_0 + Ae - \lambda e = f,
 %  \textbf{Вправа.} Переставляючи змінні $t$ та $s$ в ядрі $K(t, s)$, одержимо загалом інше ядро $K(s, t)$, яке є спряженим (союзним) щодо ядра $K(t, s)$. Показати, що резольвента союзного ядра є $R(s, t; \lambda)$, якщо резольвента вихідного ядра $K(t, s)$ була $R(t, s; \lambda)$.
 % \end{small}
 
-Наведемо ще одну важливу властивість резольвенти $R(t, s; \lambda)$. Будемо розглядати $R(t, s; \lambda)$ як ядро й застосуємо до нього процес побудови ітерованих ядер. Дістанемо послідовність функцій
+Наведемо ще одну важливу властивість резольвенти $R(t, s; \lambda)$. Будемо розглядати $R(t, s; \lambda)$ як ядро і застосуємо до нього процес побудови ітерованих ядер. Дістанемо послідовність функцій
 \[
  R_1(t, s; \lambda) \equiv R(t, s; \lambda), R_2(t, s; \lambda), \ldots, R_n(t, s; \lambda), \ldots
 \]
@@ -3171,7 +3171,7 @@ A(x_0 + e) - \lambda (x_0 + e) = Ax_0 - \lambda x_0 + Ae - \lambda e = f,
 
 Використовуючи представлення резольвенти \eqref{resser} і враховуючи, що ряд у правій частині \eqref{resser} збігається абсолютно й рівномірно в області $Q=\{a \leqslant t,s \leqslant b\}$ для $|\lambda|< 1/M(b-a)$, дістанемо, використовуючи формулу \eqref{knpp},
 \begin{multline*}
-  R(t, s; \lambda) = \displaystyle\int_{a}^{b} R(t, \tau; \lambda) R(\tau, s; \lambda) \mathrm{d}\tau =\int_{a}^{b} K(t, \tau) K(\tau, s) \mathrm{d}\tau +\\
+  R_2(t, s; \lambda) = \displaystyle\int_{a}^{b} R(t, \tau; \lambda) R(\tau, s; \lambda) \mathrm{d}\tau =\int_{a}^{b} K(t, \tau) K(\tau, s) \mathrm{d}\tau +\\
   \displaystyle+ \lambda \int_{a}^{b} \left[K(t, \tau) K_2(\tau, s) + K_2(t, \tau) K(\tau, s)\right] \mathrm{d}\tau +\\
   \displaystyle+ \lambda^2 \int_{a}^{b} \left[K_3(t, \tau) K(\tau, s) + K_2(t, \tau) K_2(\tau, s) + K(t, \tau) K_3(\tau, s)\right] \mathrm{d}\tau +\ldots =\\
   \displaystyle= K_2(t, s) + 2\lambda K_3(t, s) +3\lambda^2 K_4(t, s) + \ldots
@@ -3299,7 +3299,7 @@ $\lambda _i$, $i = \overline {1,n}$; $\mu _j ,j = \overline {1,n}$ --
   \displaystyle= K(t, s) + (\lambda_0 + h) \int_{a}^{b} K(t, \tau) \left[ \frac{C_{-n}(\tau, s)}{h^n} + \ldots\right] \mathrm{d}\tau.
 \end{multline*}
 
-Прирівнюючи коефіцієнт при $h^n$ у обох частинах останньої рівності, одержимо співвідношення
+Прирівнюючи коефіцієнт при $1/h^n$ у обох частинах останньої рівності, одержимо співвідношення
 \begin{equation}\label{cminusn}
  C_{-n}(t, s) = \lambda_0 \int_{a}^{b} K(t, \tau) C_{-n}(\tau, s) \mathrm{d}\tau,
 \end{equation}
