@@ -4138,7 +4138,7 @@ f_{1}(t)=O(1), \textrm{ якщо } \sigma_{c}\leqslant 0.
 \begin{equation}\label{convolution}
 	(f*g)(t)=\displaystyle \int_{-\infty}^{\infty}f(t-s)g(s)\mathrm{d}s.
 \end{equation}
-із межами інтегрування $\pm\infty$. Інтеграл за скінченним проміжком у \eqref{convker} можна вважати частинними випадком цього інтеграла, у якому $K(t)$ і $\varphi(t)$ одночасно рівні нулеві для $t<0$, отже не вносять нічого до інтегральної суми на проміжках $(-\infty, 0)$ і $(t, \infty)$. Іноді, використання нескінченних меж інтегрування спрощує виклад, навіть якщо насправді межі є скінченними.
+із межами інтегрування $\pm\infty$. Інтеграл за скінченним проміжком у \eqref{convker} можна вважати частинним випадком цього інтеграла, у якому $K(t)$ і $\varphi(t)$ одночасно рівні нулеві для $t<0$, отже не вносять нічого до інтегральної суми на проміжках $(-\infty, 0)$ і $(t, \infty)$. Іноді, використання нескінченних меж інтегрування спрощує виклад, навіть якщо насправді межі є скінченними.
 
 Підставляючи $s=t-s'$ до \eqref{convolution}, матимемо
 \begin{equation}\label{convolution2}
@@ -4241,7 +4241,7 @@ f_{1}(t)=O(1), \textrm{ якщо } \sigma_{c}\leqslant 0.
 	\begin{enumerate}
 		\item Розв'язати інтегральне рівняння Вольтерри за допомогою методу перетворення Лапласа
 		\begin{equation}\label{lapex1}
-		\varphi(t)=1+\displaystyle \int_{0}^{t}\varphi(t)\mathrm{d}t.
+		\varphi(t)=1+\displaystyle \int_{0}^{t}\varphi(s)\mathrm{d}s.
 		\end{equation}
 		
 		\textbf{Розв'язування.}
@@ -4264,13 +4264,13 @@ f_{1}(t)=O(1), \textrm{ якщо } \sigma_{c}\leqslant 0.
 		
 		\item Розв'язати інтегральне рівняння Вольтерри за допомогою методу перетворення Лапласа
 		\begin{equation*}
-			\varphi(t)=1-\int_{0}^{t}(t-s)\varphi(t)\mathrm{d}s.
+			\varphi(t)=1-\int_{0}^{t}(t-s)\varphi(s)\mathrm{d}s.
 		\end{equation*}
 		
 		\textbf{Розв'язування.}
 		Зауважуємо, що у цьому випадку ядро $K(t-s)=(t-s)$, $\lambda=-1$. Застосовуючи перетворення Лапласа до обох частин рівняння, дістанемо
 		\begin{equation*}
-			\mathcal{L}\{\varphi(x)\}=\mathcal{L}\{1\}-\mathcal{L}\{(t-s)*\varphi(t)\},
+			\mathcal{L}\{\varphi(x)\}=\mathcal{L}\{1\}-\mathcal{L}\{t*\varphi(t)\},
 		\end{equation*}
 		отже
 		\begin{equation*}
@@ -4287,13 +4287,13 @@ f_{1}(t)=O(1), \textrm{ якщо } \sigma_{c}\leqslant 0.
 		
 		\item Розв'язати інтегральне рівняння Вольтерри за допомогою методу перетворення Лапласа
 		\begin{equation*}
-			\varphi(t)=\displaystyle \frac{1}{3!}t^{3}-\int_{0}^{t}(t-s)\varphi(t)\mathrm{d}t.
+			\varphi(t)=\displaystyle \frac{1}{3!}t^{3}-\int_{0}^{t}(t-s)\varphi(s)\mathrm{d}t.
 		\end{equation*}
 		
 		\textbf{Розв'язування.}
 		Застосовуючи перетворення Лапласа до обох частин рівняння, отримуємо
 		\begin{equation*}
-			\displaystyle \mathcal{L}\{\varphi(t)\}=\frac{1}{3!}\mathcal{L}\{t^{3}\}-\mathcal{L}\{(t-s)*\varphi(t)\}.
+			\displaystyle \mathcal{L}\{\varphi(t)\}=\frac{1}{3!}\mathcal{L}\{t^{3}\}-\mathcal{L}\{t*\varphi(t)\}.
 		\end{equation*}
 		Звідси
 		\begin{equation*}
@@ -4310,7 +4310,7 @@ f_{1}(t)=O(1), \textrm{ якщо } \sigma_{c}\leqslant 0.
 		
 		\item Розв'язати інтегральне рівняння Вольтерри за допомогою методу перетворення Лапласа
 		\begin{equation*}
-			\varphi(t)=\displaystyle \sin t+\cos t+2\int_{0}^{t}\sin(t-s)\varphi(t)\mathrm{d}s.
+			\varphi(t)=\displaystyle \sin t+\cos t+2\int_{0}^{t}\sin(t-s)\varphi(s)\mathrm{d}s.
 		\end{equation*}
 		
 		\textbf{Розв'язування.}
@@ -4320,7 +4320,7 @@ f_{1}(t)=O(1), \textrm{ якщо } \sigma_{c}\leqslant 0.
 		\end{equation*}
 		отже,
 		\begin{equation*}
-			\Phi(s)=\displaystyle \frac{1}{s^{2}+1}+\frac{s}{s^{2}+1}+\frac{2}{s^{2}+1}U(s),
+			\Phi(s)=\displaystyle \frac{1}{s^{2}+1}+\frac{s}{s^{2}+1}+\frac{2}{s^{2}+1}\Phi(s),
 		\end{equation*}
 		або
 		\begin{equation*}
@@ -4614,7 +4614,7 @@ F(t) = f(t) + \lambda \int_{a}^{b} K_d (t, s) \varphi(s) \mathrm{d}s.
 	Множина $D$, розташована у метричному просторі $X$, називається компактною (компактом), якщо всяка послідовність елементів множини $D$ містить збіжну підпослідовність.\index{множина!компактна}
 \end{dfn}
 
-Якщо границі зазначених послідовностей належать $D$, то множина $D$ називається компактним у собі; якщо ж ці межі належать простору $X$, не належачи, можливо, множині $D$, то $D$ називається компактним у просторі $X$.
+Якщо границі зазначених послідовностей належать $D$, то множина $D$ називається компактною у собі; якщо ж ці межі належать простору $X$, не належачи, можливо, множині $D$, то $D$ називається компактною у просторі $X$.
 
 Якщо кожна нескінченна підмножина метричного простору $X$ містить збіжну до якогось елемента з $X$ послідовність, то простір $X$ називається компактним\index{простір!компактний} або просто компактом.\index{компакт} Очевидно, що компакт є повним метричним простором.
 
