@@ -4637,16 +4637,16 @@ $\rho(x_n, x_m) \to 0 \Rightarrow \exists x \in X:  \rho(x, x_n) \to 0 $
 
 Наприклад, через справджуваність критерію Коші, $\mathbb{R}$ -- повний метричний простір.
 
-\begin{dfn} Нехай $A, B \subset $X$ $, $\varepsilon > 0 $. Тоді $B $ -- $\varepsilon$-сітка для $A$, якщо $\forall a\in A \exists b \in B:  \rho(a, b) < \varepsilon$.
+\begin{dfn} Нехай $A, B \subset X$, $\varepsilon > 0$. Тоді $B$ -- $\varepsilon$-сітка для $A$, якщо $\forall a\in A$ $\exists b \in B: \rho(a, b) < \varepsilon$.
 \end{dfn}
 
 Особливо цікаві скінченні $\varepsilon$-сітки.
 
-\begin{dfn}	$A \subset $X$ $ -- цілком обмежена в $X$, якщо $\forall \varepsilon  \exists $ скінченна $\varepsilon$-сітка.
+\begin{dfn}	$A \subset X$ -- цілком обмежена в $X$, якщо $\forall \varepsilon>0$ існує скінченна $\varepsilon$-сітка.
 \end{dfn}
 
 \begin{thm}[Хаусдорф]
-	Нехай $X $ -- повний метричний простір, $K \subset $X$ $, $K$ -- замкнена. Тоді $K$ -- компакт, $\iff $ $K$ -- цілком обмежена.
+	Нехай $X$ -- повний метричний простір, $K \subset X$, $K$ -- замкнена. Тоді $K$ -- компакт, $\iff K$ -- цілком обмежена.
 \end{thm}
 \begin{proof}
 	
@@ -4655,7 +4655,7 @@ $\rho(x_n, x_m) \to 0 \Rightarrow \exists x \in X:  \rho(x, x_n) \to 0 $
 	Нехай $K$ -- компакт.
 	Припустимо, що $K $ -- не цілком обмежена.
 	
-	Тоді $\exists \varepsilon_0 > 0 \forall x_1 \in K \exists x_2 \in K:  \rho(x_1, x_2) \ge \varepsilon_0 $. Якщо такого $x_2$ немає, то $K$ має $\varepsilon_0 $-сітка $\{x_1\}$.
+	Тоді $\exists \varepsilon_0 > 0$ $\forall x_1 \in K$ $\exists x_2 \in K$: $\rho(x_1, x_2) \ge \varepsilon_0 $. Якщо такого $x_2$ немає, то $K$ має $\varepsilon_0 $-сітка $\{x_1\}$.
 	
 	Тоді знайдеться $x_3: \rho(x_3, x_j) \ge \varepsilon_0, j = \overline{1, 2} $. Якби такого $x_3 $ не було, то в $K$ була б $\varepsilon_0$-сітка $\{x_1, x_2\} $.
 	
@@ -5500,7 +5500,7 @@ x_1, x_2, \ldots, x_n, \ldots,
 \]
 при цьому однорідне рівняння ($g(t) \equiv 0$) буде мати лише тривіальний розв'язок $\varphi(t) \equiv 0$.
 
-Якщо $\mu$ збігаєтеся з власним значенням оператора $A$ кратності $p$ (резонансний випадок), тобто $\mu = \mu_m = \mu_{m+1} = \ldots = \mu_{m+p-1}$, і вільний член $g(t)$ ортогональний до власних функцій ядра $K(t, s)$, що відповідають цьому власному значенню:
+Якщо $\mu$ збігається з власним значенням оператора $A$ кратності $p$ (резонансний випадок), тобто $\mu = \mu_m = \mu_{m+1} = \ldots = \mu_{m+p-1}$, і вільний член $g(t)$ ортогональний до власних функцій ядра $K(t, s)$, що відповідають цьому власному значенню:
 \begin{equation}
  \int_a^b g(t) \varphi_k(t)\mathrm{d}t \quad (k=\overline{m, m+p-1}),
 \end{equation}
@@ -7519,7 +7519,7 @@ N=\max\limits_{a\leqslant t \leqslant b} |f(t)|, M=\max\limits_{a\leqslant s \le
 =\tilde{\psi}_{k+1,i},\quad i=0, 1, \ldots, n.
 \end{multline}
 
-За обчисленими значенням $\tilde{\psi}_{k,i}$ наближені значення розв'язку у точках $t_i$ визначатимуться так:
+За обчисленими значеннями $\tilde{\psi}_{k,i}$ наближені значення розв'язку у точках $t_i$ визначатимуться так:
 \[
 \varphi_{ni}=\displaystyle \sum_{k=0}^{n}\tilde{\psi}_{k,i}.
 \]
