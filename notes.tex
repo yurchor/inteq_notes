@@ -4028,7 +4028,7 @@ f_{1}(t)=O(1), \textrm{ якщо } \sigma_{c}\leqslant 0.
 
 Припустімо, що $F(s)$ не є сингулярною у $s=-b$ і що $f(t)\geqslant 0$ для усіх $t\geqslant 0$. Покажемо, що ці припущення суперечать одне одному. Якщо у $s=-b$ немає сингулярності, ряд \eqref{seriesF} збіжний у $ s=-b-\varepsilon$ для деякого малого $\varepsilon>0$ і
 \begin{equation*}
-	\displaystyle F(-b-\varepsilon)=\sum_{n=0}^{\infty}\int_{0}^{\infty}[(b+\varepsilon)^{n}t^{n}/n!]f(t)\mathrm{d}t.
+	\displaystyle F(-b-\varepsilon)=\sum_{0}^{\infty}\int_{0}^{\infty}[(b+\varepsilon)^{n}t^{n}/n!]f(t)\mathrm{d}t.
 \end{equation*}
 Оскільки $f(t)\geqslant 0$, підсумовування і інтегрування можна поміняти місцями, отже матимемо
 \begin{equation*}
@@ -8493,6 +8493,12 @@ A^T b =
  0 & 2+\alpha & 0\\
  2 & 0 & 2+\alpha
 \end{pmatrix}\cdot
+\begin{pmatrix}
+ x_1\\
+ x_2\\
+ x_3
+\end{pmatrix}
+=
 \begin{pmatrix}
  1\\
  1\\
