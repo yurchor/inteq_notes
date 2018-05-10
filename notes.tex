@@ -7869,10 +7869,10 @@ S=\frac{h}{3}\left(f(a)+4f\left(\frac{a+b}{2}\right)+f(b)\right).
  R^{T}\approx-\frac{h^{2}}{12}\sum_{i=1}^{n-1}hf''\left(\frac{x_{i}+x_{i+1}}{2}\right)\approx-\frac{h^{2}}{12}\int_{a}^{b}f''(x)\mathrm{d}x;
 \]
 \[
- R^{P}\approx\frac{h^{2}}{24}\sum^{n-1}hf''\left(\frac{x_{i}+x_{i+1}}{2}\right) \approx\frac{h^{2}}{24}\int^{b}f''(x)\mathrm{d}x;
+ R^{P}\approx\frac{h^{2}}{24}\sum_{i=1}^{n-1}hf''\left(\frac{x_{i}+x_{i+1}}{2}\right) \approx\frac{h^{2}}{24}\int_{a}^{b}f''(x)\mathrm{d}x;
 \]
 \[
- R^{S}\approx-\frac{h^{4}}{2880}\sum^{n-1}hf^{IV}\left(\frac{x_{i}+x_{i+1}}{2}\right) \approx-\frac{h^{4}}{2880}\int^{b}f^{IV}(x)\mathrm{d}x.
+ R^{S}\approx-\frac{h^{4}}{2880}\sum_{i=1}^{n-1}hf^{IV}\left(\frac{x_{i}+x_{i+1}}{2}\right) \approx-\frac{h^{4}}{2880}\int_{a}^{b}f^{IV}(x)\mathrm{d}x.
 \]
 
 Наведені оцінки є асимптотичними, тобто виконуються при $h \to 0$ з точністю до членів вищого порядку малості. Але для справедливості цих оцінок необхідне існування неперервних похідних підінтегральної функції відповідних порядків. Якщо ці похідні кусково-неперервні, то можна зробити тільки мажорантні оцінки:
